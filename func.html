@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="func.js"> </script>
+    <script>
+
+
+        Func.each([1,2,3,4,5], function(item) {
+            console.info(item);
+        });
+
+
+        var mapped = Func.map([1,2,3,4,5], function(item) {
+            return item + 1;
+        });
+        console.info(mapped);
+
+
+        var reduced = Func.reduce([1,2,3,4,5], 1, function(seed, item) {
+            return seed * item;
+        });
+        console.info(reduced);
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
